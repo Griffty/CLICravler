@@ -1,10 +1,15 @@
 package com.github.griffty.world;
 
+import lombok.Getter;
+
+@Getter
 public enum BlockType {
     Air(' '),
     Wall('█'),
-    Floor('░'),
-    Hatch('⬢');
+    Floor('▒'),
+    Hatch('⬢'),
+    Player('@'),
+    Fog('░');
 
     private final char symbol;
 
@@ -15,4 +20,5 @@ public enum BlockType {
     public static char getSymbol(byte index) {
         return  BlockType.values()[index].symbol;
     }
+
 }

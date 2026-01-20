@@ -1,6 +1,5 @@
 package com.github.griffty.util;
 
-import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.ToString;
@@ -37,13 +36,26 @@ public final class Vector2 {
         return new Vector2(this.x - other.x, this.y - other.y);
     }
 
-    public Vector2 scale(int scalar) {
-        return new Vector2(this.x * scalar, this.y * scalar);
+    public Vector2 scale(float scalar) {
+        return new Vector2((int)(this.x * scalar), (int)(this.y * scalar));
     }
-
     public Vector2 clamp(int minX, int minY, int maxX, int maxY) {
         int clampedX = Math.max(minX, Math.min(this.x, maxX));
         int clampedY = Math.max(minY, Math.min(this.y, maxY));
         return new Vector2(clampedX, clampedY);
+    }
+
+    public boolean bigger(Vector2 v) {
+        return getX() > v.getX() && getY() > v.getY();
+    }
+
+    public  boolean smaller(Vector2 v) {
+        return getX() < v.getX() && getY() < v.getY();
+    }
+
+    public float dist(Vector2 worldCenter) {
+        int dx = this.x - worldCenter.x;
+        int dy = this.y - worldCenter.y;
+        return (float) Math.sqrt(dx * dx + dy * dy);
     }
 }

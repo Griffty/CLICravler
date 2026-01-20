@@ -10,8 +10,8 @@ import lombok.*;
 @ToString
 public class Player {
     private Vector2 position;
-    public Player() {
-        this.position = new Vector2();
+    public Player(Vector2 position) {
+        this.position = position;
     }
 
     public void move(Vector2 movement) {
