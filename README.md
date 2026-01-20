@@ -1,6 +1,6 @@
 # CLICravler
 
-A tiny CLI crawler game built as a 1h test (took 1h 28m).
+A tiny CLI crawler game built as a 1h test. For the exact one hour (1h 28m) version check 1h release. For the latest check the lates release.
 
 ## Gameplay
 - Start the game and move through the grid-like crawl using simple keyboard controls.
@@ -8,13 +8,10 @@ A tiny CLI crawler game built as a 1h test (took 1h 28m).
 - Repeat the loop: move, discover, and react to what you encounter.
 
 ## Usage
-- **IMPORTANT** This program will not run in most IDEs, as it requires standalone terminal that supports ANSI sequences
-- To run use: java --jar "fileName"
+- **IMPORTANT** This program requires standalone terminal that supports ANSI sequences, therefore it will not run in most IDEs
+- To run use: `java --jar "fileName"`
 
 ## Libraries Used
 - Java 25 (Maven)
 - JLine 3.30.6
 - Lombok 1.18.42
-
-## Updates
-- This project will continue to be updated.
