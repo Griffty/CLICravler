@@ -6,6 +6,7 @@ A tiny CLI crawler game built as a 1h test. For the exact one hour (1h 28m) vers
 - Start the game and move through the grid-like crawl using simple keyboard controls.
 - Input directional commands to navigate, interact with tiles, and keep exploring.
 - Repeat the loop: move, discover, and react to what you encounter.
+- World is generated using Binary Space Partitioning
 
 ## Usage
 - **IMPORTANT** This program requires standalone terminal that supports ANSI sequences, therefore it will not run in most IDEs
