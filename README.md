@@ -10,7 +10,7 @@ A tiny CLI crawler game built as a 1h test. For the exact one hour (1h 28m) vers
 
 ## Usage
 - **IMPORTANT** This program requires standalone terminal that supports ANSI sequences, therefore it will not run in most IDEs
-- To run use: `java --jar "fileName"`
+- To run use: `java -jar "fileName"`
 
 ## Libraries Used
 - Java 25 (Maven)
